@@ -1,5 +1,5 @@
 {
-  "name": "cms-wordpress",
+  "name": "infoxicator-site",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
@@ -11,7 +11,10 @@
     "date-fns": "2.14.0",
     "next": "latest",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-smooth-collapse": "^2.1.0",
+    "react-tooltip": "^4.2.10",
+    "sass": "^1.27.0"
   },
   "devDependencies": {
     "postcss-flexbugs-fixes": "4.2.1",

@@ -16,9 +16,9 @@ export default function Index({ allPosts: { edges }, preview }) {
       <Layout preview={preview}>
         <Head>
           <title>Next.js Blog Example with {CMS_NAME}</title>
+          <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
         </Head>
-        <Container>
-          <Intro />
+        <Container className="text-secondary bg-secondary">
           {heroPost && (
             <HeroPost
               title={heroPost.title}

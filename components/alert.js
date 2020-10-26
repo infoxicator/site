@@ -3,7 +3,7 @@ import cn from 'classnames'
 import { EXAMPLE_PATH } from '../lib/constants'
 
 export default function Alert({ preview }) {
-  return (
+  return preview && (
     <div
       className={cn('border-b', {
         'bg-accent-7 border-accent-7 text-white': preview,
@@ -12,7 +12,6 @@ export default function Alert({ preview }) {
     >
       <Container>
         <div className="py-2 text-center text-sm">
-          {preview ? (
             <>
               This is page is a preview.{' '}
               <a
@@ -23,18 +22,6 @@ export default function Alert({ preview }) {
               </a>{' '}
               to exit preview mode.
             </>
-          ) : (
-            <>
-              The source code for this blog is{' '}
-              <a
-                href={`https://github.com/zeit/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-                className="underline hover:text-success duration-200 transition-colors"
-              >
-                available on GitHub
-              </a>
-              .
-            </>
-          )}
         </div>
       </Container>
     </div>
