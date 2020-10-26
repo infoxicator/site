@@ -2,7 +2,7 @@
 
 Built with Next.js
 
-Theme switcher by (SLD)[https://github.com/slarsendisney]
+Theme switcher by [SLD](https://github.com/slarsendisney)
 
 ### Development
 
