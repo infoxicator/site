@@ -104,3 +104,12 @@
 .wp-block-media-text {
   @apply grid grid-cols-2 gap-4;
 }
+
+.truncate-3-lines {
+  max-height: 7.2em; /* double the size of line-height */
+  line-height: 1.8em;
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+}
