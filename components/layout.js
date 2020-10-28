@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import Prism from "Prismjs";
+import Prism from "prismjs";
 import "prismjs/components/prism-jsx.min";
 import "prismjs/components/prism-json.min";
 import "prismjs/components/prism-bash.min";
