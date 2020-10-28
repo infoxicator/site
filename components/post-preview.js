@@ -2,6 +2,7 @@ import Avatar from '../components/avatar'
 import Date from '../components/date'
 import CoverImage from './cover-image'
 import Link from 'next/link'
+import Tags from '../components/tags'
 
 export default function PostPreview({
   title,
@@ -28,14 +29,7 @@ export default function PostPreview({
           className="summary-post text-base truncate-3-lines"
           dangerouslySetInnerHTML={{ __html: excerpt }}
         />
-        {tags.edges.map(({ node }) => {
-            return (
-              <div class="inline-block mt-5">
-              <button class="py-2 px-4 shadow-md no-underline rounded-full bg-primary text-primary font-sans font-semibold text-sm border-blue hover:text-white hover:bg-secondary focus:outline-none active:shadow-none mr-2">
-                {node.name}
-              </button>
-            </div>
-          )})}
+        {tags.edges.length > 0 && <Tags tags={tags} />}
       </div>
     </div>
     </Link>

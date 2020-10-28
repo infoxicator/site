@@ -1,14 +1,13 @@
 export default function Tags({ tags }) {
   return (
-    <div className="max-w-2xl mx-auto">
-      <p className="mt-8 text-lg font-bold">
-        Tagged
+      <>
         {tags.edges.map((tag, index) => (
-          <span key={index} className="ml-4 font-normal">
-            {tag.node.name}
-          </span>
+          <div key={index} className="inline-block mt-5">
+          <button className="py-2 px-4 shadow-md no-underline rounded-full bg-primary text-primary font-sans font-semibold text-sm border-blue hover:text-white hover:bg-secondary focus:outline-none active:shadow-none mr-2">
+                {tag.node.name}
+              </button>
+          </div>
         ))}
-      </p>
-    </div>
+    </>
   )
 }

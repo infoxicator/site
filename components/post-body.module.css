@@ -10,7 +10,7 @@
 }
 
 .content a {
-  @apply underline;
+  @apply no-underline text-link;
 }
 
 .content ul,
@@ -60,7 +60,7 @@
 }
 
 .content blockquote {
-  @apply border-l-4 bg-gray-200 italic ml-0 py-4 px-6;
+  @apply border-l-4 border-primary bg-secondary text-default italic ml-0 py-4 px-6;
 }
 
 .content blockquote p {

@@ -9,7 +9,6 @@ import Layout from '../components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../lib/api'
 import PostTitle from '../components/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
 import Tags from '../components/tags'
 
 export default function Post({ post, posts, preview }) {
@@ -46,7 +45,9 @@ export default function Post({ post, posts, preview }) {
               />
               <PostBody content={post.content} />
               <footer>
-                {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
+                <div className="max-w-2xl mx-auto">
+                  {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
+                </div>
               </footer>
             </article>
 
