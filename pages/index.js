@@ -4,6 +4,7 @@ import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
 import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
+import Intro from '../components/intro';
 
 export default function Index({ allPosts: { edges }, preview }) {
   const heroPost = edges[0]?.node
@@ -16,16 +17,7 @@ export default function Index({ allPosts: { edges }, preview }) {
           <title>Infoxicator.com | React | Micro Frontends</title>
         </Head>
         <Container className="text-secondary bg-secondary">
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.featuredImage.node}
-              date={heroPost.date}
-              author={heroPost.author.node}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
+         <Intro />
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>

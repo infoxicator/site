@@ -12,7 +12,7 @@
     --color-text-secondary: #292c66ff;
     --color-text-default: #303030;
     --color-text-default-soft: #484848;
-    --color-text-inverse: #fff;
+    --color-text-inverse: #f5f5ff;
     --color-text-inverse-soft: #ffffffb3;
     --color-logo-one: #639fa7;
     --color-logo-two: #FFC53A;
@@ -34,7 +34,7 @@
     --color-text-secondary: #f2f2f2;
     --color-text-default: #e9e9e9;
     --color-text-default-soft: #6a6a6a;
-    --color-text-inverse: #fff;
+    --color-text-inverse: rgb(36, 48, 85);
     --color-text-inverse-soft: #ffffffb3;
     --color-logo-one: #FFC53A;
     --color-logo-two: #fff;
@@ -60,8 +60,8 @@
     --color-text-secondary: #f2f2f2;
     --color-text-default: #e9e9e9;
     --color-text-default-soft: #6a6a6a;
-    --color-text-inverse: #fff;
-    --color-text-inverse-soft: #ffffffb3;
+    --color-text-inverse: #1c1c1c;
+    --color-text-inverse-soft: #1c1c1c;
     --color-logo-one: #161617;
     --color-logo-two: #161617;
     --color-logo-three: #161617;
@@ -89,8 +89,8 @@
     --color-text-secondary: #f5f5f5;
     --color-text-default: #f5f5f5;
     --color-text-default-soft: #484848;
-    --color-text-inverse: #fff;
-    --color-text-inverse-soft: #ffffffb3;
+    --color-text-inverse: #0090c9;
+    --color-text-inverse-soft: #0090c9;
     --color-logo-one: #fcc700;
     --color-logo-two: #ffffff;
     --color-logo-three: #97cc3c;
@@ -111,8 +111,8 @@
     --color-text-secondary: #292c66ff;
     --color-text-default: #303030;
     --color-text-default-soft: #484848;
-    --color-text-inverse: #fff;
-    --color-text-inverse-soft: #ffffffb3;
+    --color-text-inverse: #292c66ff;
+    --color-text-inverse-soft: #f5f5ff;
     --color-logo-one: #639fa7;
     --color-logo-two: #FFC53A;
     --color-logo-three: #d25171;
@@ -132,7 +132,7 @@
     --color-text-secondary: #831f3f;
     --color-text-default: #303030;
     --color-text-default-soft: #484848;
-    --color-text-inverse: #fff;
+    --color-text-inverse: #f5f5ff;
     --color-text-inverse-soft: #ffffffb3;
     --color-logo-one: #272f4b;
     --color-logo-two: #4d5e9b;
@@ -152,8 +152,8 @@
     --color-text-secondary: #831f3f;
     --color-text-default: #303030;
     --color-text-default-soft: #484848;
-    --color-text-inverse: #fff;
-    --color-text-inverse-soft: #ffffffb3;
+    --color-text-inverse: #831f3f;
+    --color-text-inverse-soft: #f5f5ff;
     --color-logo-one: #f9519a;
     --color-logo-two: #ffffff;
     --color-logo-three: #feabcf;
@@ -173,8 +173,8 @@
     --color-text-secondary: #f2f2f2;
     --color-text-default: #e9e9e9;
     --color-text-default-soft: #6a6a6a;
-    --color-text-inverse: #fff;
-    --color-text-inverse-soft: #ffffffb3;
+    --color-text-inverse: rgb(36, 48, 85);
+    --color-text-inverse-soft: rgb(36, 48, 85);
     --color-logo-one: #FFC53A;
     --color-logo-two: #fff;
     --color-logo-three: #c63082;
@@ -201,7 +201,7 @@
     --color-text-secondary: #f2f2f2;
     --color-text-default: #e9e9e9;
     --color-text-default-soft: #6a6a6a;
-    --color-text-inverse: #fff;
+    --color-text-inverse: #551d21;
     --color-text-inverse-soft: #ffffffb3;
     --color-logo-one: #FFC53A;
     --color-logo-two: #fff;
