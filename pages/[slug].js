@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Container from '../components/container'
@@ -10,8 +11,17 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from '../lib/api'
 import PostTitle from '../components/post-title'
 import Head from 'next/head'
 import Tags from '../components/tags'
+import Prism from "prismjs";
+import "prismjs/components/prism-jsx.min";
+import "prismjs/components/prism-json.min";
+import "prismjs/components/prism-bash.min";
 
 export default function Post({ post, posts, preview }) {
+
+  useEffect(() => {
+    Prism.highlightAll();
+  });
+
   const router = useRouter()
   const morePosts = posts?.edges
 
@@ -40,7 +50,6 @@ export default function Post({ post, posts, preview }) {
                 title={post.title}
                 coverImage={post.featuredImage.node}
                 date={post.date}
-                author={post.author.node}
                 categories={post.categories}
               />
               <PostBody content={post.content} />

@@ -5,12 +5,10 @@ export default function Avatar({ author }) {
       : author.name
 
   return (
-    <div className="flex items-center">
       <img
         src={author.avatar.url}
-        className="w-40 h-40 rounded-full mr-4"
+        className="w-40 h-40 rounded-full mr-4 inline"
         alt={name}
       />
-    </div>
   )
 }
