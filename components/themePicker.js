@@ -9,14 +9,14 @@ const myThemes = [
         unlocked: true,
     },
     {
-        id: "rhubarbandcustard",
-        name: "Rhubarb and Custard",
+        id: "spacegray",
+        name: "Space Gray",
         type: "light",
         unlocked: true
     },
     {
-        id: "midnightdreams",
-        name: "Midnight Dreams",
+        id: "twitter",
+        name: "Twitter Dark",
         type: "dark",
         unlocked: true
     },
@@ -33,8 +33,8 @@ const myThemes = [
         unlocked: true
     },
     {
-        id: "matrix",
-        name: "Matrix",
+        id: "christmas",
+        name: "Christmas",
         type: "unlockable",
         unlocked: true
     },

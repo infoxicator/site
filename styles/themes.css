@@ -1,6 +1,6 @@
 .default-theme {
   --color-bg-primary: #004953;
-  --color-bg-primary-light: #7BB4BF;
+  --color-bg-primary-light: #E7FDFF;
   --color-bg-accent: #DE7421; 
   --color-bg-accent-light: #DE7421; 
   --color-bg-secondary: #E7FDFF;
@@ -12,56 +12,53 @@
   --color-text-secondary: #004953;
   --color-text-default: #303030;
   --color-text-default-soft: #484848;
-  --color-text-inverse: #f5f5ff;
+  --color-text-inverse: #008ca0;
   --color-text-inverse-soft: #ffffffb3;
 }
 
 @media (prefers-color-scheme: dark) {
     .default-theme {
-        --color-bg-primary: #0b132bff;
-    --color-bg-primary-light: #111d41;
-    --color-bg-accent: #e9a700; 
-    --color-bg-accent-light: #e8b32c; 
-    --color-bg-secondary: #0b132bff;
-    --color-text-link: #f5bf37;    
-    --color-bg-compliment: #112b48;
-    --color-bg-default: rgb(36, 48, 85);
-    --color-bg-inverse: #d77d4d;
-    --color-text-primary: #fff;
-    --color-text-secondary: #f2f2f2;
-    --color-text-default: #e9e9e9;
-    --color-text-default-soft: #6a6a6a;
-    --color-text-inverse: rgb(36, 48, 85);
-    --color-text-inverse-soft: #ffffffb3;
-    --color-logo-one: #FFC53A;
-    --color-logo-two: #fff;
-    --color-logo-three: #c63082;
-    .tint:before {
-        background: #0b132bff;
-        opacity: 0.15;
+      --color-bg-primary: #15202B;
+      --color-bg-primary-light: #172D3F;
+      --color-bg-accent: #1B91DA; 
+      --color-bg-accent-light: #1B91DA; 
+      --color-bg-secondary: #657786;
+      --color-text-link: #1B91DA;    
+      --color-bg-compliment: #112b48;
+      --color-bg-default: #192734;
+      --color-bg-inverse: #1B91DA;
+      --color-text-primary: #fff;
+      --color-text-secondary: #f2f2f2;
+      --color-text-default: #e9e9e9;
+      --color-text-default-soft: #6a6a6a;
+      --color-text-inverse: #1B91DA;
+      --color-text-inverse-soft: #1B91DA;
+      .tint:before {
+          background: #0b132bff;
+          opacity: 0.15;
+        }
+      .bulb-glow {
+          @extend .bulb-special
       }
     }
   }
 
-.theme-matrix {
-    --color-bg-primary: #2dd755;
-    --color-bg-primary-light: #42f06a;
-    --color-bg-accent: #2dd755; 
-    --color-bg-accent-light: #4ce971; 
+.theme-christmas {
+    --color-bg-primary: #165B33;
+    --color-bg-primary-light: #EA4630;
+    --color-bg-accent: #EA4630; 
+    --color-bg-accent-light: #EA4630; 
     --color-bg-secondary: #0b2b26;
-    --color-text-link: #42f06a;    
+    --color-text-link: #EA4630;    
     --color-bg-compliment: #1c1f1e;
     --color-bg-default: #1c1c1c;
     --color-bg-inverse: #d77d4d;
-    --color-text-primary: #000000;
+    --color-text-primary: #f2f2f2;
     --color-text-secondary: #f2f2f2;
     --color-text-default: #e9e9e9;
     --color-text-default-soft: #6a6a6a;
     --color-text-inverse: #1c1c1c;
     --color-text-inverse-soft: #1c1c1c;
-    --color-logo-one: #161617;
-    --color-logo-two: #161617;
-    --color-logo-three: #161617;
     .tint:before {
         background: #0b132bff;
         opacity: 0.15;
@@ -86,17 +83,14 @@
     --color-text-secondary: #f5f5f5;
     --color-text-default: #f5f5f5;
     --color-text-default-soft: #484848;
-    --color-text-inverse: #0090c9;
+    --color-text-inverse: #fcc700;
     --color-text-inverse-soft: #0090c9;
-    --color-logo-one: #fcc700;
-    --color-logo-two: #ffffff;
-    --color-logo-three: #97cc3c;
 }
 
 
 .theme-midnightgreen {
   --color-bg-primary: #004953;
-  --color-bg-primary-light: #7BB4BF;
+  --color-bg-primary-light: #E7FDFF;
   --color-bg-accent: #DE7421; 
   --color-bg-accent-light: #DE7421; 
   --color-bg-secondary: #E7FDFF;
@@ -108,70 +102,44 @@
   --color-text-secondary: #004953;
   --color-text-default: #303030;
   --color-text-default-soft: #484848;
-  --color-text-inverse: #f5f5ff;
+  --color-text-inverse: #008ca0;
   --color-text-inverse-soft: #ffffffb3;
 }
 
-.theme-pink {
-    --color-bg-primary: #ff5d8f;
-    --color-bg-primary-light: #fa6796;
-    --color-bg-accent: #bd4177; 
-    --color-bg-accent-light: #d84a87; 
-    --color-bg-secondary: #ffc4d6;
-    --color-text-link: #bd4177;
-    --color-bg-compliment: #d3d3d340;
-    --color-bg-default: #f5f5ff;
-    --color-bg-inverse: #d77d4d;
-    --color-text-primary: #f5f5f5;
-    --color-text-secondary: #831f3f;
-    --color-text-default: #303030;
-    --color-text-default-soft: #484848;
-    --color-text-inverse: #f5f5ff;
-    --color-text-inverse-soft: #ffffffb3;
-    --color-logo-one: #272f4b;
-    --color-logo-two: #4d5e9b;
-    --color-logo-three: #738de0;
-}
-.theme-rhubarbandcustard {
-    --color-bg-primary: #f9cf77;
-    --color-bg-primary-light: #ffdd93;
+.theme-spacegray {
+    --color-bg-primary: #aeafaf;
+    --color-bg-primary-light: #f1f1f1;
     --color-bg-accent: #fea5cb; 
     --color-bg-accent-light: #feb3d3; 
-    --color-bg-secondary: #f7dca2;
-    --color-text-link: #bd4177;
+    --color-bg-secondary: #f1f1f1;
+    --color-text-link: #3d49dc;
     --color-bg-compliment: #d3d3d340;
     --color-bg-default: #f5f5ff;
     --color-bg-inverse: #d77d4d;
-    --color-text-primary: #9b2c5c;
-    --color-text-secondary: #831f3f;
+    --color-text-primary: #0c0c0c;
+    --color-text-secondary: #3d49dc;
     --color-text-default: #303030;
     --color-text-default-soft: #484848;
-    --color-text-inverse: #831f3f;
+    --color-text-inverse: #3d49dc;
     --color-text-inverse-soft: #f5f5ff;
-    --color-logo-one: #f9519a;
-    --color-logo-two: #ffffff;
-    --color-logo-three: #feabcf;
 }
 
-.theme-midnightdreams {
-    --color-bg-primary: #0b132bff;
-    --color-bg-primary-light: #111d41;
-    --color-bg-accent: #e9a700; 
-    --color-bg-accent-light: #e8b32c; 
-    --color-bg-secondary: #0b132bff;
-    --color-text-link: #f5bf37;    
+.theme-twitter {
+    --color-bg-primary: #15202B;
+    --color-bg-primary-light: #172D3F;
+    --color-bg-accent: #1B91DA; 
+    --color-bg-accent-light: #1B91DA; 
+    --color-bg-secondary: #657786;
+    --color-text-link: #1B91DA;    
     --color-bg-compliment: #112b48;
-    --color-bg-default: rgb(36, 48, 85);
-    --color-bg-inverse: #d77d4d;
+    --color-bg-default: #192734;
+    --color-bg-inverse: #1B91DA;
     --color-text-primary: #fff;
     --color-text-secondary: #f2f2f2;
     --color-text-default: #e9e9e9;
     --color-text-default-soft: #6a6a6a;
-    --color-text-inverse: rgb(36, 48, 85);
-    --color-text-inverse-soft: rgb(36, 48, 85);
-    --color-logo-one: #FFC53A;
-    --color-logo-two: #fff;
-    --color-logo-three: #c63082;
+    --color-text-inverse: #1B91DA;
+    --color-text-inverse-soft: #1B91DA;
     .tint:before {
         background: #0b132bff;
         opacity: 0.15;
@@ -183,7 +151,7 @@
 
   .theme-reddead {
     --color-bg-primary: #b9181b;
-    --color-bg-primary-light: #201310;
+    --color-bg-primary-light: #fbaf19;
     --color-bg-accent: #e9a700; 
     --color-bg-accent-light: #fbaf19; 
     --color-bg-secondary: #201310;
