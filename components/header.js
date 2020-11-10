@@ -9,7 +9,7 @@ export const defaultTheme =
   window.matchMedia &&
   window.matchMedia("(prefers-color-scheme: dark)").matches
     ? "theme-midnightdreams"
-    : "theme-blue";
+    : "theme-midnightgreen";
 
 export default function Header() {
   const [theme, setTheme] = useLocalStorage("theme", defaultTheme);

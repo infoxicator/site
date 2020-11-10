@@ -1,22 +1,19 @@
 .default-theme {
-    --color-bg-primary: #41539b;
-    --color-bg-primary-light: #505f9e;
-    --color-bg-accent: #FE5F55; 
-    --color-bg-accent-light: #ff7167; 
-    --color-bg-secondary: #ccdefd;
-    --color-text-link: #278e79;
-    --color-bg-compliment: #f5f5ff;
-    --color-bg-default: #f5f5ff;
-    --color-bg-inverse: #d77d4d;
-    --color-text-primary: #f5f5f5;
-    --color-text-secondary: #292c66ff;
-    --color-text-default: #303030;
-    --color-text-default-soft: #484848;
-    --color-text-inverse: #f5f5ff;
-    --color-text-inverse-soft: #ffffffb3;
-    --color-logo-one: #639fa7;
-    --color-logo-two: #FFC53A;
-    --color-logo-three: #d25171;
+  --color-bg-primary: #004953;
+  --color-bg-primary-light: #7BB4BF;
+  --color-bg-accent: #DE7421; 
+  --color-bg-accent-light: #DE7421; 
+  --color-bg-secondary: #E7FDFF;
+  --color-text-link: #008ca0;
+  --color-bg-compliment: #f5f5ff;
+  --color-bg-default: #f5f5f5;
+  --color-bg-inverse: #d77d4d;
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #004953;
+  --color-text-default: #303030;
+  --color-text-default-soft: #484848;
+  --color-text-inverse: #f5f5ff;
+  --color-text-inverse-soft: #ffffffb3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -97,25 +94,22 @@
 }
 
 
-.theme-blue {
-    --color-bg-primary: #41539b;
-    --color-bg-primary-light: #505f9e;
-    --color-bg-accent: #FE5F55; 
-    --color-bg-accent-light: #ff7167; 
-    --color-bg-secondary: #ccdefd;
-    --color-text-link: #278e79;
-    --color-bg-compliment: #f5f5ff;
-    --color-bg-default: #f5f5ff;
-    --color-bg-inverse: #d77d4d;
-    --color-text-primary: #f5f5f5;
-    --color-text-secondary: #292c66ff;
-    --color-text-default: #303030;
-    --color-text-default-soft: #484848;
-    --color-text-inverse: #292c66ff;
-    --color-text-inverse-soft: #f5f5ff;
-    --color-logo-one: #639fa7;
-    --color-logo-two: #FFC53A;
-    --color-logo-three: #d25171;
+.theme-midnightgreen {
+  --color-bg-primary: #004953;
+  --color-bg-primary-light: #7BB4BF;
+  --color-bg-accent: #DE7421; 
+  --color-bg-accent-light: #DE7421; 
+  --color-bg-secondary: #E7FDFF;
+  --color-text-link: #008ca0;
+  --color-bg-compliment: #f5f5ff;
+  --color-bg-default: #f5f5f5;
+  --color-bg-inverse: #d77d4d;
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #004953;
+  --color-text-default: #303030;
+  --color-text-default-soft: #484848;
+  --color-text-inverse: #f5f5ff;
+  --color-text-inverse-soft: #ffffffb3;
 }
 
 .theme-pink {
@@ -187,25 +181,22 @@
     }
   }
 
-  .theme-apocalypse {
-    --color-bg-primary: #941d2b;
-    --color-bg-primary-light: #691e25;
+  .theme-reddead {
+    --color-bg-primary: #b9181b;
+    --color-bg-primary-light: #201310;
     --color-bg-accent: #e9a700; 
-    --color-bg-accent-light: #e8b32c; 
-    --color-bg-secondary: #6b1a26;
-    --color-text-link: #f5bf37;    
-    --color-bg-compliment: #551d21;
-    --color-bg-default: #551d21;
-    --color-bg-inverse: #d77d4d;
+    --color-bg-accent-light: #fbaf19; 
+    --color-bg-secondary: #201310;
+    --color-text-link: #fbaf19;    
+    --color-bg-compliment: #5b0b0d;
+    --color-bg-default: #010101;
+    --color-bg-inverse: #fbaf19;
     --color-text-primary: #fff;
     --color-text-secondary: #f2f2f2;
     --color-text-default: #e9e9e9;
     --color-text-default-soft: #6a6a6a;
-    --color-text-inverse: #551d21;
-    --color-text-inverse-soft: #ffffffb3;
-    --color-logo-one: #FFC53A;
-    --color-logo-two: #fff;
-    --color-logo-three: #585cd0;
+    --color-text-inverse: #5b0b0d;
+    --color-text-inverse-soft: #010101;
     .tint:before {
         background: #0b132bff;
         opacity: 0.15;

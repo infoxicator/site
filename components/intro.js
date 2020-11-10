@@ -182,13 +182,6 @@ export default function Intro() {
                     </div>
                   </div>
                 </div>
-
-                <div
-                  className="w-full absolute left-0 bottom-0 ml-1"
-                  style={{ transform: "rotate(-8deg)", zIndex: 1, marginBottom: "-360px" }}
-                >
-                  <div className="grid--gray h-48 w-48"></div>
-                </div>
               </div>
               </div>
           </div>

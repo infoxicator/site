@@ -3,8 +3,8 @@ import ReactTooltip from "react-tooltip";
 
 const myThemes = [
     {
-        id: "blue",
-        name: "Blue",
+        id: "midnightgreen",
+        name: "Midnight Green",
         type: "light",
         unlocked: true,
     },
@@ -21,8 +21,8 @@ const myThemes = [
         unlocked: true
     },
     {
-        id: "apocalypse",
-        name: "Apocalypse",
+        id: "reddead",
+        name: "Red Dead Redemption",
         type: "dark",
         unlocked: true
     },
