@@ -3,6 +3,7 @@ import SmoothCollapse from "react-smooth-collapse";
 import { useState, useEffect } from 'react';
 import useLocalStorage from '../utils/hooks/useLocalStorage';
 import ThemePicker from './themePicker';
+import ChristmasAnimation from './christmasAnimation';
 
 export const defaultTheme =
   typeof window !== "undefined" &&
@@ -14,6 +15,7 @@ export const defaultTheme =
 export default function Header() {
   const [theme, setTheme] = useLocalStorage("theme", defaultTheme);
   const [themeExpanded, setThemeExpanded] = useState(false);
+  const [showAnimation, setShowAnimation] = useState(false);
 
   useEffect(() => {
     let currentCss = document.getElementById("site-content").className;
@@ -22,6 +24,7 @@ export default function Header() {
     if (typeof window !== "undefined") {
       window.theme = theme;
     }
+    (theme === "theme-christmas") ? setShowAnimation(true) : setShowAnimation(false);
   }, [theme]);
 
   return (
@@ -38,6 +41,7 @@ export default function Header() {
           </div>
         </SmoothCollapse>
       </div>
+      <ChristmasAnimation show={showAnimation} />
     <header className="bg-primary">
       <div className="flex flex-wrap items-center justify-between container px-4 py-3 mx-auto mx-auto ">
         <Link href="/">

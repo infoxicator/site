@@ -6,7 +6,7 @@ export default function Layout({ preview, children }) {
   return (
     <>
       <Meta />
-      <div id="site-content" className="theme-blue">
+      <div id="site-content" className="theme-twitter">
       <div className="min-h-screen">
         <Header />
         <main className="text-default bg-default">{children}</main>
