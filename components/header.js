@@ -8,7 +8,7 @@ export const defaultTheme =
   typeof window !== "undefined" &&
   window.matchMedia &&
   window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "theme-midnightdreams"
+    ? "theme-twitter"
     : "theme-midnightgreen";
 
 export default function Header() {
