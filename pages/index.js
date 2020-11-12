@@ -4,6 +4,7 @@ import MoreStories from '../components/more-stories'
 import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
 import Intro from '../components/intro';
+import { SITE_TITLE } from '../lib/constants'
 
 export default function Index({ allPosts: { edges }, preview }) {
   const heroPost = edges[0]?.node
@@ -13,7 +14,7 @@ export default function Index({ allPosts: { edges }, preview }) {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Infoxicator.com | React | Micro Frontends</title>
+          <title>{SITE_TITLE}</title>
         </Head>
         <Container className="text-secondary bg-secondary">
          <Intro />

@@ -12,6 +12,7 @@ import PostTitle from '../components/post-title'
 import Head from 'next/head'
 import Tags from '../components/tags'
 import Prism from "prismjs";
+import { SITE_URL } from '../lib/constants'
 import "prismjs/components/prism-jsx.min";
 import "prismjs/components/prism-json.min";
 import "prismjs/components/prism-bash.min";
@@ -29,6 +30,8 @@ export default function Post({ post, posts, preview }) {
     return <ErrorPage statusCode={404} />
   }
 
+  const postDescription = post?.excerpt?.replace(/<[^>]+>/g, '');
+
   return (
     <Layout preview={preview}>
       <Container>
@@ -42,9 +45,25 @@ export default function Post({ post, posts, preview }) {
                   {post.title}
                 </title>
                 <meta
+                  key="description"
+                  name="description"
+                  content={postDescription}
+                />
+                <meta
+                  key="og:image"
                   property="og:image"
                   content={post.featuredImage?.node?.sourceUrl}
                 />
+                <link key="canonical" rel="canonical" href={SITE_URL} />
+                <meta key="og:url" property="og:url" content={`${SITE_URL}${post?.slug}`} />
+                <meta key="og:title" property="og:title" content={post.title} />
+                <meta key="og:description" property="og:description" content={postDescription} />
+                <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
+                <meta key="twitter:title" name="twitter:title" content={post.title} />
+                <meta key="twitter:creator" name="twitter:creator" content="@infoxicador"/>
+                <meta key="twitter:description" name="twitter:description" content={postDescription} />
+                <meta key="twitter:image" name="twitter:image" content={post.featuredImage?.node?.sourceUrl} />
+                {/* <meta name="keywords" content="foo, bar"></meta> */}
               </Head>
               <PostHeader
                 title={post.title}
