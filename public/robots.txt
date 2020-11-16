@@ -1,0 +1,3 @@
+Sitemap: https://www.infoxicator.com/sitemap.xml
+User-agent: *
+Allow: /

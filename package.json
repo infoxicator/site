@@ -19,8 +19,10 @@
     "sass": "^1.27.0"
   },
   "devDependencies": {
+    "node-fetch": "^2.6.1",
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
     "tailwindcss": "^1.4.6"
   },
   "license": "MIT"
