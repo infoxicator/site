@@ -13,6 +13,9 @@ export default function Footer() {
                       Copyright &copy; {new Date().getFullYear() + " "}
                       Ruben Casas. All Rights Reserved.
                     </div>
+                    <div className="px-4 w-full text-center sm:w-auto sm:text-left text-sm sm:flex sm:items-center">
+                      Theme switcher by <a href="https://sld.codes" className="ml-1">SLD</a>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -59,7 +59,7 @@ export default function Post({ post, posts, preview }) {
                   property="og:image"
                   content={post.featuredImage?.node?.sourceUrl}
                 />
-                <link key="canonical" rel="canonical" href={SITE_URL} />
+                <link key="canonical" rel="canonical" href={`${SITE_URL}blog`} />
                 <meta key="og:url" property="og:url" content={`${SITE_URL}${post?.slug}`} />
                 <meta key="og:title" property="og:title" content={post.title} />
                 <meta key="og:description" property="og:description" content={postDescription} />
