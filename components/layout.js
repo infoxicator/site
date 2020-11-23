@@ -1,8 +1,12 @@
+import { useContext, useEffect } from 'react';
 import Footer from '../components/footer';
 import Meta from '../components/meta';
 import Header from '../components/header';
+import ThemeContext from '../context/ThemeContext';
 
-export default function Layout({ preview, children }) {  
+export default function Layout({ children }) { 
+  const { theme, switchTheme } = useContext(ThemeContext);
+  console.log('theme set', theme);
   return (
     <>
       <Meta />
