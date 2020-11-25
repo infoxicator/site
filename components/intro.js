@@ -15,7 +15,7 @@ export default function Intro() {
               <p className="md:text-xl md:pr-48">
                 Software Engineer and Architect. Currently building Micro Frontends
                 Frameworks At American Express. I enjoy exploring new techologies and
-                sharing my expiriences with others...
+                sharing my experiences with others...
               </p>
               {/* <a href="#"
                 className="mt-6 mb-12 md:mb-0 md:mt-10 inline-block py-3 px-8 text-default bg-default hover:bg-inverse hover:text-secondary rounded-lg shadow"
