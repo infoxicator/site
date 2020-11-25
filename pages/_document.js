@@ -6,9 +6,9 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <script type="text/javascript" dangerouslySetInnerHTML={{ __html: themeScript }}></script>
         </Head>
         <body>
+        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: themeScript }}></script>
           <Main />
           <NextScript />
         </body>
