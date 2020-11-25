@@ -2,11 +2,11 @@ import Footer from '../components/footer';
 import Meta from '../components/meta';
 import Header from '../components/header';
 
-export default function Layout({ preview, children }) {  
+export default function Layout({ children }) { 
   return (
     <>
       <Meta />
-      <div id="site-content" className="theme-twitter">
+      <div id="site-content">
       <div className="min-h-screen">
         <Header />
         <main className="text-default bg-default">{children}</main>

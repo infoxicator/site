@@ -1,32 +1,13 @@
 import Link from 'next/link';
 import SmoothCollapse from "react-smooth-collapse";
-import { useState, useEffect } from 'react';
-import useLocalStorage from '../utils/hooks/useLocalStorage';
+import { useState, useEffect, useContext } from 'react';
 import ThemePicker from './themePicker';
 import ChristmasAnimation from './christmasAnimation';
-
-export const defaultTheme =
-  typeof window !== "undefined" &&
-  window.matchMedia &&
-  window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "theme-twitter"
-    : "theme-midnightgreen";
+import ThemeContext from '../context/ThemeContext';
 
 export default function Header() {
-  const [theme, setTheme] = useLocalStorage("theme", defaultTheme);
+  const { theme, switchTheme } = useContext(ThemeContext);
   const [themeExpanded, setThemeExpanded] = useState(false);
-  const [showAnimation, setShowAnimation] = useState(false);
-
-  useEffect(() => {
-    let currentCss = document.getElementById("site-content").className;
-    currentCss = currentCss.replace(/theme-\w*/g, "") + theme;
-    document.getElementById("site-content").className = currentCss;
-    if (typeof window !== "undefined") {
-      window.theme = theme;
-    }
-    (theme === "theme-christmas") ? setShowAnimation(true) : setShowAnimation(false);
-  }, [theme]);
-
   return (
     <>
     <div className="bg-white">
@@ -36,12 +17,12 @@ export default function Header() {
             </div>
             <ThemePicker
               theme={theme}
-              setTheme={setTheme}
+              setTheme={switchTheme}
             />
           </div>
         </SmoothCollapse>
       </div>
-      <ChristmasAnimation show={showAnimation} />
+      <ChristmasAnimation show={(theme === "theme-christmas")} />
     <header className="bg-primary">
       <div className="flex flex-wrap items-center justify-between container px-4 py-3 mx-auto mx-auto ">
         <Link href="/">
