@@ -41,7 +41,6 @@ const myThemes = [
 ]
 
 const ThemePicker = ({ theme, setTheme, small }) => {
-  const fontSize = small ? "text-sm" : "text-md";
   return (
     <div className="flex m-auto md:m-0">
       <ReactTooltip />

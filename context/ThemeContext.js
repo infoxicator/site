@@ -1,17 +1,17 @@
 import useLocalStorage from '../utils/hooks/useLocalStorage';
+import { COLORS } from '../styles/colors';
 
 const ThemeContext = React.createContext();
 
-export const defaultTheme =
-  typeof window !== "undefined" &&
-  window.matchMedia &&
-  window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "theme-twitter"
-    : "theme-midnightgreen";
-
 export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useLocalStorage("theme", defaultTheme);
+    const [theme, setTheme] = useLocalStorage("theme", null);
     const switchTheme = (newTheme) => {
+        let root = document.documentElement;
+        Object.entries(COLORS).forEach(([name, colorByTheme]) => {
+            const cssVarName = `--color-${name}`;
+        
+            root.style.setProperty(cssVarName, colorByTheme[newTheme]);
+          });
         setTheme(newTheme);
     }
     return (
