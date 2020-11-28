@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import SmoothCollapse from "react-smooth-collapse";
-import { useState, useEffect, useContext } from 'react';
+import { useState, useContext } from 'react';
 import ThemePicker from './themePicker';
 import ChristmasAnimation from './christmasAnimation';
 import ThemeContext from '../context/ThemeContext';
+import Image from 'next/image'
 
 export default function Header() {
   const { theme, switchTheme } = useContext(ThemeContext);
@@ -26,7 +27,7 @@ export default function Header() {
     <header className="bg-primary">
       <div className="flex flex-wrap items-center justify-between container px-4 py-3 mx-auto mx-auto ">
         <Link href="/">
-          <a><img src="/infoxicator.png" alt="Infoxicator.com"/></a>
+          <a><Image width={210} height={24} src="/infoxicator.png" alt="Infoxicator.com"/></a>
         </Link>
         <div className="flex items-center">
           <button

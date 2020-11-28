@@ -4,5 +4,8 @@ module.exports = {
         require('./scripts/generateSiteMap')
       }
       return config
-    }
+    },
+    images: {
+      domains: ['www.infoxication.net'],
+    },
   }

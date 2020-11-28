@@ -1,6 +1,10 @@
+import { useContext } from 'react';
 import Avatar from './avatar';
+import ThemeContext from '../context/ThemeContext';
 
 export default function Intro() {
+const { theme } = useContext(ThemeContext);
+const avatarUrl = theme === 'theme-christmas' ? '/avatar-christmas.png' : '/avatar.png';
   return (
 <div>
     <div className="bg-primary text-primary md:overflow-hidden">
@@ -8,7 +12,7 @@ export default function Intro() {
         <div className="md:max-w-6xl md:mx-auto">
           <div className="md:flex md:flex-wrap">
             <div className="md:w-1/2 text-center md:text-left md:pt-16">
-              <Avatar author={{ name: "Ruben", avatar: { url: "/avatar.png" } }} />
+              <Avatar author={{ name: "Ruben", avatar: { url: avatarUrl } }} />
               <h1 className="font-bold text-2xl text-bold md:text-5xl leading-tight mb-4" >
                 Hi, I am Ruben Casas 👋
               </h1>

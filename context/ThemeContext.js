@@ -2,8 +2,8 @@ import useLocalStorage from '../utils/hooks/useLocalStorage';
 
 const ThemeContext = React.createContext();
 
-export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useLocalStorage("theme", null);
+export const ThemeProvider = ({ themeStorageKey='theme', children }) => {
+    const [theme, setTheme] = useLocalStorage(themeStorageKey, null);
     const switchTheme = (newTheme) => {   
     let root = document.body;
     root.classList.remove(theme)
