@@ -14,6 +14,7 @@ import { SITE_URL } from '../lib/constants'
 import "prismjs/components/prism-jsx.min";
 import "prismjs/components/prism-json.min";
 import "prismjs/components/prism-bash.min";
+import "prismjs/plugins/line-numbers/prism-line-numbers.min";
 import Loading from '../components/loading';
 import Custom404 from '../pages/404';
 
