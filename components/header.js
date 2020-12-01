@@ -3,7 +3,7 @@ import SmoothCollapse from "react-smooth-collapse";
 import { useState, useContext } from 'react';
 import ThemePicker from './themePicker';
 import ChristmasAnimation from './christmasAnimation';
-import ThemeContext from '../context/ThemeContext';
+import { ThemeContext} from 'use-theme-switcher';
 import Image from 'next/image'
 
 export default function Header() {

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import Avatar from './avatar';
-import ThemeContext from '../context/ThemeContext';
+import { ThemeContext } from 'use-theme-switcher';
 
 export default function Intro() {
 const { theme } = useContext(ThemeContext);

@@ -1,5 +1,5 @@
 import '../styles/index.css'
-import { ThemeProvider } from '../context/ThemeContext';
+import { ThemeProvider } from 'use-theme-switcher';
 
 function MyApp({ Component, pageProps }) {
   return <ThemeProvider>
