@@ -113,3 +113,7 @@
   word-wrap: break-word;
   overflow: hidden;
 }
+
+code {
+  color: var(--color-text-link)
+}
