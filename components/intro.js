@@ -18,7 +18,7 @@ const avatarUrl = theme === 'theme-christmas' ? '/avatar-christmas.png' : '/avat
               </h1>
               <p className="md:text-xl md:pr-48">
                 Software Engineer and Architect. Currently building Micro Frontends
-                Frameworks At American Express. I enjoy exploring new techologies and
+                Frameworks At American Express. I enjoy exploring new technologies and
                 sharing my experiences with others...
               </p>
               {/* <a href="#"
