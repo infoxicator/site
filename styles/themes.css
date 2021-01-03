@@ -125,7 +125,26 @@
         background: #0b132bff;
         opacity: 0.15;
       }
-    .bulb-glow {
-        @extend .bulb-special
-    }
+  }
+
+  .theme-amongus {
+    --color-bg-primary: #6a2fb8;
+    --color-bg-primary-light: #38efdc;
+    --color-bg-accent: #38efdc; 
+    --color-bg-accent-light: #38efdc; 
+    --color-bg-secondary: #010101;
+    --color-text-link: #38efdc;    
+    --color-bg-compliment: #c51111;
+    --color-bg-default: #1e1f26;
+    --color-bg-inverse: #38efdc;
+    --color-text-primary: #fff;
+    --color-text-secondary: #f2f2f2;
+    --color-text-default: #e9e9e9;
+    --color-text-default-soft: #6a6a6a;
+    --color-text-inverse: #3b177c;
+    --color-text-inverse-soft: #010101;
+    .tint:before {
+        background: #0b132bff;
+        opacity: 0.15;
+      }
   }

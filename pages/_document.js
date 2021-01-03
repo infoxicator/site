@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
         <Head>
         </Head>
         <body>
-          <ThemeScriptTag defaultDarkTheme="theme-christmas" defaultLightTheme="theme-christmas" />
+          <ThemeScriptTag defaultDarkTheme="theme-twitter" defaultLightTheme="theme-midnightgreen" />
           <Main />
           <NextScript />
         </body>
