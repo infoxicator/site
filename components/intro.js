@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import Avatar from './avatar';
 import { ThemeContext } from 'use-theme-switcher';
+import AmongusAnimation from './amongusAnimation';
 
 export default function Intro() {
 const { theme } = useContext(ThemeContext);
@@ -190,6 +191,7 @@ const avatarUrl = theme === 'theme-christmas' ? '/avatar-christmas.png' : '/avat
               </div>
           </div>
         </div>
+        <AmongusAnimation show={(theme === "theme-amongus")} />
       </div>
       <svg
         className="fill-current text-inverse-soft hidden md:block"

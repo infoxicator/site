@@ -33,8 +33,8 @@ const myThemes = [
         unlocked: true
     },
     {
-        id: "christmas",
-        name: "Christmas",
+        id: "amongus",
+        name: "Among Us",
         type: "unlockable",
         unlocked: true
     },

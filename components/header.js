@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import SmoothCollapse from "react-smooth-collapse";
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import ThemePicker from './themePicker';
 import ChristmasAnimation from './christmasAnimation';
 import { ThemeContext} from 'use-theme-switcher';
@@ -9,6 +9,12 @@ import Image from 'next/image'
 export default function Header() {
   const { theme, switchTheme } = useContext(ThemeContext);
   const [themeExpanded, setThemeExpanded] = useState(false);
+  useEffect(() => {
+    if(theme === 'theme-christmas'){
+      switchTheme('theme-twitter');
+    }
+  }, [theme]);
+  
   return (
     <>
     <div className="bg-white">
