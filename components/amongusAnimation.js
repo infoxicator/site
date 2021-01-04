@@ -16,7 +16,7 @@ const ChristmasAnimation = ({ show }) => {
     options={defaultOptions}
       height={"14%"}
       width={"20%"}
-      style={{ position: "fixed", bottom: "0",
+      style={{ position: "absolute", bottom: "-0.125rem",
       right: "0", pointerEvents: "none", zIndex: 1000 }}
       isClickToPauseDisabled={true}
   />)}

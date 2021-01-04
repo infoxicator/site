@@ -8,7 +8,6 @@ const { theme } = useContext(ThemeContext);
 const avatarUrl = theme === 'theme-christmas' ? '/avatar-christmas.png' : '/avatar.png';
   return (
 <div>
-<AmongusAnimation show={(theme === "theme-amongus")} />
     <div className="bg-primary text-primary md:overflow-hidden">
       <div className="px-4 py-20 md:py-4">
         <div className="md:max-w-6xl md:mx-auto">
@@ -192,6 +191,7 @@ const avatarUrl = theme === 'theme-christmas' ? '/avatar-christmas.png' : '/avat
               </div>
           </div>
         </div>
+        <AmongusAnimation show={(theme === "theme-amongus")} />
       </div>
       <svg
         className="fill-current text-inverse-soft hidden md:block"
