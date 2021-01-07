@@ -11,7 +11,7 @@ export default function Header() {
   const [themeExpanded, setThemeExpanded] = useState(false);
   useEffect(() => {
     if(theme === 'theme-christmas'){
-      switchTheme('theme-twitter');
+      switchTheme('theme-amongus');
     }
   }, [theme]);
   
