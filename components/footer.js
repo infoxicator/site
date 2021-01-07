@@ -1,4 +1,5 @@
 import Container from './container'
+import { FormattedMessage } from 'react-intl'
 
 export default function Footer() {
   return (
@@ -11,7 +12,7 @@ export default function Footer() {
                   <div className="-mx-4 flex flex-wrap justify-between">
                     <div className="px-4 w-full text-center sm:w-auto sm:text-left text-sm">
                       Copyright &copy; {new Date().getFullYear() + " "}
-                      Ruben Casas. All Rights Reserved.
+                      Ruben Casas. <FormattedMessage id="footerCopyright" />
                     </div>
                   </div>
                 </div>
