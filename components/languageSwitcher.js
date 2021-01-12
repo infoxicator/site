@@ -3,6 +3,11 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { useRouter } from "next/router"
 
+const iconStyle = {
+    color: "var(--color-text-primary)",
+    fontSize: "1.5rem",
+}
+
 export default function LanguageSwitcher() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const router = useRouter();
@@ -17,7 +22,6 @@ export default function LanguageSwitcher() {
   };
 
   const switchLanguage = (e, locale) => {
-    console.log('locale click', locale);
     router.push('/','/', { locale });
     handleClose();
   }
@@ -25,9 +29,10 @@ export default function LanguageSwitcher() {
   return (
     <div>
      <Button
-        className="text-primary"
+        style={{ color: "var(--color-text-primary)" }}
         onClick={handleClick}
-        startIcon={<ion-icon name="language-outline" />}
+        startIcon={<ion-icon style={iconStyle} name="language-outline" />}
+        endIcon={<ion-icon style={{ color: "var(--color-text-primary)" }} name="chevron-down-outline"></ion-icon>}
       >{locale}</Button>
       <Menu
         id="language-menu"

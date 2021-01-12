@@ -94,8 +94,9 @@ export default function Post({ post, posts, preview }) {
   )
 }
 
-export async function getStaticProps({ params, preview = false, previewData }) {
-  const data = await getPostAndMorePosts(params.slug, preview, previewData)
+export async function getStaticProps({ params, preview = false, previewData, locale }) {
+  const categoryId = locale === 'en' ? 22 : 23;
+  const data = await getPostAndMorePosts(params.slug, preview, previewData, categoryId)
 
   return {
     props: {
