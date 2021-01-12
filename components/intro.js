@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import Avatar from './avatar';
 import { ThemeContext } from 'use-theme-switcher';
 import AmongusAnimation from './amongusAnimation';
+import { FormattedMessage } from 'react-intl'
 
 export default function Intro() {
 const { theme } = useContext(ThemeContext);
@@ -15,12 +16,10 @@ const avatarUrl = theme === 'theme-christmas' ? '/avatar-christmas.png' : '/avat
             <div className="md:w-1/2 text-center md:text-left md:pt-16">
               <Avatar author={{ name: "Ruben", avatar: { url: avatarUrl } }} />
               <h1 className="font-bold text-2xl text-bold md:text-5xl leading-tight mb-4" >
-                Hi, I am Ruben Casas 👋
+                <FormattedMessage id="introMessage" />
               </h1>
               <p className="md:text-xl md:pr-48">
-                Software Engineer and Architect. Currently building Micro Frontends
-                Frameworks At American Express. I enjoy exploring new technologies and
-                sharing my experiences with others...
+                <FormattedMessage id="introDescription" />
               </p>
               {/* <a href="#"
                 className="mt-6 mb-12 md:mb-0 md:mt-10 inline-block py-3 px-8 text-default bg-default hover:bg-inverse hover:text-secondary rounded-lg shadow"

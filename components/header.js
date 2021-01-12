@@ -5,6 +5,13 @@ import ThemePicker from './themePicker';
 import ChristmasAnimation from './christmasAnimation';
 import { ThemeContext} from 'use-theme-switcher';
 import Image from 'next/image'
+import LanguageSwitcher from './languageSwitcher';
+import IconButton from '@material-ui/core/Button';
+
+const iconStyle = {
+  color: "var(--color-text-primary)",
+  fontSize: "1.5rem",
+}
 
 export default function Header() {
   const { theme, switchTheme } = useContext(ThemeContext);
@@ -36,17 +43,15 @@ export default function Header() {
           <a><Image width={210} height={24} src="/infoxicator.png" alt="Infoxicator.com"/></a>
         </Link>
         <div className="flex items-center">
-          <button
+          <LanguageSwitcher />
+          <IconButton
+            size="large"
             aria-label="Theme Changer"
-            className="ml-2"
+            className="text-primary font-bold text-2xl"
             onClick={() => {
               setThemeExpanded(!themeExpanded);
             }}
-          >
-            <h1 className="text-2xl font-bold  mt-0 mb-0 text-primary">
-              { !themeExpanded ? <ion-icon name="brush-outline"/> : <ion-icon name="close-circle-outline"/> }
-            </h1>
-          </button>
+          >{ !themeExpanded ? <ion-icon style={iconStyle} name="brush-outline"/> : <ion-icon style={iconStyle} name="close-circle-outline"/> }</IconButton>
         </div>
       </div>
     </header>

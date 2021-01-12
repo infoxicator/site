@@ -8,4 +8,8 @@ module.exports = {
     images: {
       domains: ['www.infoxication.net'],
     },
+    i18n: {
+      locales: ['en', 'es'],
+      defaultLocale: 'en',
+    },
   }
