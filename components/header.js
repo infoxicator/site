@@ -5,6 +5,7 @@ import ThemePicker from './themePicker';
 import ChristmasAnimation from './christmasAnimation';
 import { ThemeContext} from 'use-theme-switcher';
 import Image from 'next/image'
+import LanguageSwitcher from './languageSwitcher';
 
 export default function Header() {
   const { theme, switchTheme } = useContext(ThemeContext);
@@ -36,6 +37,7 @@ export default function Header() {
           <a><Image width={210} height={24} src="/infoxicator.png" alt="Infoxicator.com"/></a>
         </Link>
         <div className="flex items-center">
+          <LanguageSwitcher />
           <button
             aria-label="Theme Changer"
             className="ml-2"
