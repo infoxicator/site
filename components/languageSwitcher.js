@@ -1,4 +1,5 @@
 import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { useRouter } from "next/router"
@@ -12,6 +13,19 @@ export default function LanguageSwitcher() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const router = useRouter();
   const { locale } = router;
+
+  const LanguageMenu = () => (
+    <Menu
+          id="language-menu"
+          anchorEl={anchorEl}
+          keepMounted
+          open={Boolean(anchorEl)}
+          onClose={handleClose}
+        >
+          <MenuItem onClick={(e) => switchLanguage(e, 'en')}>English</MenuItem>
+          <MenuItem onClick={(e) => switchLanguage(e, 'es')}>Español</MenuItem>
+        </Menu>
+  )
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -27,23 +41,23 @@ export default function LanguageSwitcher() {
   }
 
   return (
-    <div>
+    <>
+    <div className="hidden md:block">
      <Button
         style={{ color: "var(--color-text-primary)" }}
         onClick={handleClick}
         startIcon={<ion-icon style={iconStyle} name="language-outline" />}
         endIcon={<ion-icon style={{ color: "var(--color-text-primary)" }} name="chevron-down-outline"></ion-icon>}
       >{locale}</Button>
-      <Menu
-        id="language-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-        <MenuItem onClick={(e) => switchLanguage(e, 'en')}>English</MenuItem>
-        <MenuItem onClick={(e) => switchLanguage(e, 'es')}>Español</MenuItem>
-      </Menu>
+      <LanguageMenu />
     </div>
+    <div className="md:hidden">
+     <IconButton
+        style={{ color: "var(--color-text-primary)", minWidth: "auto" }}
+        onClick={handleClick}
+      ><ion-icon style={iconStyle} name="language-outline" /></IconButton>
+      <LanguageMenu />
+    </div>
+    </>
   );
 }
