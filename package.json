@@ -16,6 +16,7 @@
     "react-dom": "^16.13.1",
     "react-intl": "^5.10.13",
     "react-lottie": "^1.2.3",
+    "react-scroll-progress-bar": "^1.1.12",
     "react-smooth-collapse": "^2.1.0",
     "react-tooltip": "^4.2.10",
     "sass": "^1.27.0",
