@@ -4,7 +4,7 @@ import { ThemeScriptTag } from 'use-theme-switcher';
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html>
         <Head>
         </Head>
         <body>

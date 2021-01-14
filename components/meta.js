@@ -48,7 +48,7 @@ export default function Meta() {
       <meta key="twitter:creator" name="twitter:creator" content="@infoxicador"/>
       <meta key="twitter:description" name="twitter:description" content={SITE_DESCRIPTION} />
       <meta key="twitter:image" name="twitter:image" content={HOME_OG_IMAGE_URL} />
-      <meta key="kewords" name="keywords" content="react, micro frontends, learn, javascript, blog, tutorial"></meta>
+      <meta key="kewords" name="keywords" content="react, micro-frontends, learn, javascript, blog, tutorial"></meta>
       <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
       <script noModule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-tomorrow.min.css"></link>
