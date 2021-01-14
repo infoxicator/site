@@ -17,7 +17,7 @@ import "prismjs/components/prism-bash.min";
 import "prismjs/plugins/line-numbers/prism-line-numbers.min";
 import Loading from '../components/loading';
 import Custom404 from '../pages/404';
-import ProgressBar from "react-scroll-progress-bar"; 
+import ProgressBar from "react-scroll-progress-bar";
 
 export default function Post({ post, posts, preview }) {
 
@@ -26,6 +26,7 @@ export default function Post({ post, posts, preview }) {
   });
 
   const router = useRouter()
+  const { locale } = router;
   const morePosts = posts?.edges
 
   if (!router.isFallback && !post?.slug) {
@@ -71,6 +72,8 @@ export default function Post({ post, posts, preview }) {
                 <meta key="twitter:description" name="twitter:description" content={postDescription} />
                 <meta key="twitter:image" name="twitter:image" content={post.featuredImage?.node?.sourceUrl} />
                 {/* <meta name="keywords" content="foo, bar"></meta> */}
+                <link rel="alternate" hreflang={locale} href={`${SITE_URL}${locale}/${post?.slug}`} />
+                {post?.hreflang?.lang && <link rel="alternate" hreflang={post?.hreflang?.lang} href={post?.hreflang?.link} />}
               </Head>
               <ProgressBar bgcolor="var(--color-text-link)" />
               <PostHeader

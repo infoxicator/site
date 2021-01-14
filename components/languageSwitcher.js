@@ -3,6 +3,7 @@ import IconButton from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { useRouter } from "next/router"
+import { useCookies } from 'react-cookie';
 
 const iconStyle = {
     color: "var(--color-text-primary)",
@@ -11,6 +12,7 @@ const iconStyle = {
 
 export default function LanguageSwitcher() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [ cookie, setCookie ] = useCookies(['NEXT_LOCALE']);
   const router = useRouter();
   const { locale } = router;
 
@@ -37,6 +39,9 @@ export default function LanguageSwitcher() {
 
   const switchLanguage = (e, locale) => {
     router.push('/','/', { locale });
+    if(cookie.NEXT_LOCALE !== locale){
+      setCookie("NEXT_LOCALE", locale, { path: "/" });
+    }
     handleClose();
   }
 
