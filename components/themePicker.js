@@ -38,6 +38,12 @@ const myThemes = [
         type: "unlockable",
         unlocked: true
     },
+    {
+      id: "christmas",
+      name: "Christmas",
+      type: "unlockable",
+      unlocked: true
+  },
 ]
 
 const ThemePicker = ({ theme, setTheme, small }) => {

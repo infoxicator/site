@@ -16,11 +16,11 @@ const iconStyle = {
 export default function Header() {
   const { theme, switchTheme } = useContext(ThemeContext);
   const [themeExpanded, setThemeExpanded] = useState(false);
-  useEffect(() => {
-    if(theme === 'theme-christmas'){
-      switchTheme('theme-amongus');
-    }
-  }, [theme]);
+  // useEffect(() => {
+  //   if(theme === 'theme-christmas'){
+  //     switchTheme('theme-christmas');
+  //   }
+  // }, [theme]);
   
   return (
     <>
