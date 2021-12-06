@@ -1,7 +1,9 @@
 {
     "introMessage": "Hola, mi nombre es Ruben Casas 👋",
-    "introDescription": "Ingeniero de Software y Arquitecto. Actualmente desarrollando Micro-Frontends en American Express. Disfruto explorando tecnologías nuevas y compartiendo mi conocimento con otros...",
+    "introDescription": "Ingeniero de Software, ubicado en Londres, Inglaterra 🇬🇧. Disfruto solucionar problemas con código y compartir my conocimiento con otros a través de mis presentaciones y artículos",
     "moreStoriesTitle": "Artículos Recientes",
+    "allPostsTitle": "Blog",
+    "allPostsButton": "Todos los Articulos",
     "footerCopyright": "Todos Los Derechos Reservados.",
     "postHeaderPublished": "Publicado"
 }

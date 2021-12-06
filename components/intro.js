@@ -21,14 +21,14 @@ const avatarUrl = theme === 'theme-christmas' ? '/avatar-christmas.png' : '/avat
               <p className="md:text-xl md:pr-48">
                 <FormattedMessage id="introDescription" />
               </p>
-              {/* <a href="#"
-                className="mt-6 mb-12 md:mb-0 md:mt-10 inline-block py-3 px-8 text-default bg-default hover:bg-inverse hover:text-secondary rounded-lg shadow"
-                >About Me</a> */}
               <div className="text-4xl mt-5">
                 <a href="https://twitter.com/Infoxicador" target="_blank" rel="noreferrer" className="mr-3 hover:text-link"><ion-icon name="logo-twitter"></ion-icon></a>
                 <a href="https://www.linkedin.com/in/ruben-casas-17100383/" target="_blank" rel="noreferrer" className="mr-3 hover:text-link"><ion-icon name="logo-linkedin"></ion-icon></a> 
                 <a href="https://www.youtube.com/c/RubenCasas" target="_blank" rel="noreferrer" className="mr-3 hover:text-link"><ion-icon name="logo-youtube"></ion-icon></a>
               </div>
+              <a href="blog"
+                className="mt-6 mb-12 md:mb-0 md:mt-10 inline-block py-3 px-8 text-secondary bg-secondary hover:bg-inverse hover:text-secondary rounded-lg shadow"
+                >Blog</a>
             </div>
             <div className="md:w-1/2 relative">
               <div className="hidden md:block">

@@ -7,7 +7,6 @@ import Intro from '../components/intro';
 import { SITE_TITLE } from '../lib/constants'
 
 export default function Index({ allPosts: { edges }, preview }) {
-  const heroPost = edges[0]?.node
   const morePosts = edges;
 
   return (
@@ -18,7 +17,7 @@ export default function Index({ allPosts: { edges }, preview }) {
         </Head>
         <Container className="text-secondary bg-secondary">
          <Intro />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {morePosts.length > 0 && <MoreStories posts={morePosts} hideButton={false} />}
         </Container>
       </Layout>
     </>
@@ -27,7 +26,7 @@ export default function Index({ allPosts: { edges }, preview }) {
 
 export async function getStaticProps({ preview = false, locale }) {
   const categoryId = locale === 'en' ? 22 : 23;
-  const allPosts = await getAllPostsForHome(preview, categoryId)
+  const allPosts = await getAllPostsForHome(preview, categoryId, 6)
   return {
     props: { allPosts, preview },
   }

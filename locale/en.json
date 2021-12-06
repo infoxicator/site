@@ -1,7 +1,9 @@
 {
     "introMessage": "Hi, I am Ruben Casas 👋",
-    "introDescription": "Senior Engineer, currently building Micro-Frontends At American Express. I enjoy exploring new technologies and sharing my knowledge... We rise by lifting others.",
+    "introDescription": "Senior Software Developer based in London, UK 🇬🇧. I love solving problems with code and sharing my knowledge with others through my articles and presentations.",
     "moreStoriesTitle": "Recent Posts",
+    "allPostsTitle": "Blog",
+    "allPostsButton": "All Posts",
     "footerCopyright": "All Rights Reserved.",
     "postHeaderPublished": "Published"
 }
