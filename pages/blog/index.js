@@ -23,6 +23,7 @@ export default function Index({ allPosts: { edges }, preview }) {
 }
 
 export async function getStaticProps({ preview = false, locale }) {
+  console.log({ locale });
   const categoryId = locale === 'en' ? 22 : 23;
   const allPosts = await getAllPostsForHome(preview, categoryId)
   return {
