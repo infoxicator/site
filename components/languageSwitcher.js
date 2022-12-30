@@ -4,6 +4,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { useRouter } from "next/router"
 import { useCookies } from 'react-cookie';
+import React from 'react';
 
 const iconStyle = {
     color: "var(--color-text-primary)",
