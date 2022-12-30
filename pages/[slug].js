@@ -114,6 +114,7 @@ export async function getStaticProps({ params, preview = false, previewData, loc
 
 export async function getStaticPaths() {
   const allPosts = await getAllPostsWithSlug()
+  console.log(allPosts.edges.map(({ node }) => `/${node.slug}`));
 
   return {
     paths: allPosts.edges.map(({ node }) => `/${node.slug}`) || [],
