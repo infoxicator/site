@@ -5,8 +5,8 @@ import Layout from '../../components/layout'
 import { getAllPostsForHome } from '../../lib/api'
 import { SITE_TITLE } from '../../lib/constants'
 
-export default function Index({ preview }) {
-  //const morePosts = edges;
+export default function Index({ allPosts: { edges }, preview }) {
+  const morePosts = edges;
 
   return (
     <>
@@ -15,7 +15,7 @@ export default function Index({ preview }) {
           <title>{SITE_TITLE}</title>
         </Head>
         <Container className="text-secondary bg-secondary">
-          {/* {morePosts.length > 0 && <MoreStories posts={morePosts} title="allPostsTitle" /> } */}
+          {morePosts.length > 0 && <MoreStories posts={morePosts} title="allPostsTitle" /> }
         </Container>
       </Layout>
     </>
