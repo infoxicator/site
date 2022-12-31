@@ -9,7 +9,8 @@ module.exports = {
       domains: ['www.infoxication.net'],
     },
     i18n: {
-      locales: ['en', 'es'],
-      defaultLocale: 'en',
+      locales: ['en-GB', 'es-ES'],
+      defaultLocale: 'en-GB',
+      localeDetection: false,
     },
   }
