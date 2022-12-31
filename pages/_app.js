@@ -4,8 +4,8 @@ import { IntlProvider } from 'react-intl';
 import { useRouter } from "next/router"
 
 const languages = {
-  en: require('../locale/en.json'),
-  es: require('../locale/es.json')
+  en: require('../locale/english.json'),
+  es: require('../locale/espanol.json')
 };
 
 function MyApp({ Component, pageProps }) {
